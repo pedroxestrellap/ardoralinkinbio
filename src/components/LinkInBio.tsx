@@ -163,7 +163,7 @@ export default function LinkInBio() {
           className="animate-fade-up-3"
           style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "8px", marginBottom: "20px" }}
         >
-          {["✈️ Skincare Coreano", "🇩🇴 Santo Domingo"].map((tag) => (
+          {["🇰🇷 Skincare Coreano", "🇩🇴 Santo Domingo"].map((tag) => (
             <span
               key={tag}
               className="font-body"
