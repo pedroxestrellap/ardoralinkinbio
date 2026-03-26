@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F4EFE8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .link-btn {
+    @apply w-full flex items-center justify-center
+           bg-ink text-cream
+           font-body font-semibold text-sm
+           tracking-widest2 uppercase
+           py-4 px-6 rounded-2xl
+           border-2 border-ink
+           transition-all duration-200
+           hover:-translate-y-0.5
+           hover:bg-cream hover:text-ink
+           active:translate-y-0;
+  }
+
+  .topbar-text {
+    @apply font-body font-light text-[11px] tracking-wider text-ink/50;
+  }
+}
